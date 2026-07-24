@@ -1,4 +1,4 @@
-"""Export vymohy/*.md into an Excel workbook under output/."""
+"""Export vymohy/**/V-*.md into an Excel workbook under output/."""
 import re
 from pathlib import Path
 
@@ -42,7 +42,7 @@ def clean_body(raw: str) -> str:
 
 
 rows = []
-for f in sorted(vymohy.glob("V-*.md")):
+for f in sorted(vymohy.rglob("V-*.md"), key=lambda p: int(re.search(r"V-(\d+)", p.name).group(1))):
     m = re.match(r"V-(\d+)\.md", f.name)
     if not m:
         continue
@@ -57,7 +57,7 @@ for f in sorted(vymohy.glob("V-*.md")):
             "title": title,
             "short": shorts.get(num, ""),
             "body": clean_body(text),
-            "file": f"vymohy/{f.name}",
+            "file": f.relative_to(root).as_posix(),
         }
     )
 
@@ -101,7 +101,7 @@ ws1.title = "Список"
 ws1["A1"] = "Вимоги до статуту нової федерації"
 ws1["A1"].font = title_font
 ws1["A2"] = (
-    "Версія 0.1 · зріз з репозиторію (файли vymohy/V-NN.md). "
+    "Версія 0.1 · зріз з репозиторію (файли vymohy/<тема>/V-NN.md). "
     "Пріоритет при розбіжностях — окремі markdown-файли."
 )
 ws1["A2"].font = note_font
@@ -151,7 +151,7 @@ ws3["A1"] = "Робочий аркуш для коментарів / пропо�
 ws3["A1"].font = title_font
 ws3.merge_cells("A1:F1")
 ws3["A2"] = (
-    "Зміни з цього аркуша варто переносити назад у vymohy/V-NN.md через PR — "
+    "Зміни з цього аркуша варто переносити назад у vymohy/<тема>/V-NN.md через PR — "
     "цей файл не є джерелом істини."
 )
 ws3["A2"].font = note_font
