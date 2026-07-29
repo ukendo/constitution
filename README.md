@@ -6,8 +6,9 @@
 
 ### Чернетка статуту
 
-- Текст: [`drafts/draft_2026_07_28.md`](drafts/draft_2026_07_28.md) ([DOCX](drafts/draft_2026_07_28.docx))
-- Розбір щодо вимог (відповідність / суперечності): [`drafts/draft_2026_07_28_rozbir.md`](drafts/draft_2026_07_28_rozbir.md)
+- Поточний текст: [`drafts/draft.md`](drafts/draft.md) ([DOCX](drafts/draft.docx))
+- Поточний розбір щодо вимог: [`drafts/draft_rozbir.md`](drafts/draft_rozbir.md)
+- Знімки за датами та як оновлювати: [`drafts/README.md`](drafts/README.md)
 
 Вимоги згруповані за темами. Нумерація В-N збережена.
 
