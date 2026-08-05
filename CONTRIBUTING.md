@@ -22,10 +22,11 @@
 
 Після merge гілка видаляється автоматично.
 
-## Чернетка статуту
+## Чернетки статуту
 
-Поточний текст — [`drafts/draft.md`](drafts/draft.md); знімки за датами — `drafts/draft_YYYY_MM_DD.*`.  
-Як оновлювати наступну версію: [`drafts/README.md`](drafts/README.md).
+Дві паралельні редакції: [`draft_kulyk/`](drafts/draft_kulyk/) (Євгенія Кулик) і [`draft_vasilenko/`](drafts/draft_vasilenko/) (Василенко).  
+Поточний текст кожної — `draft.md` у своїй папці; знімки — `draft_YYYY_MM_DD.*` там само.  
+Як оновлювати: [`drafts/README.md`](drafts/README.md).
 
 ## Суперечності між вимогами
 

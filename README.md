@@ -4,11 +4,14 @@
 
 > Голоси ≠ члени — див. [В-7](vymohy/03-система-голосів/V-07.md). Хто такі повні члени — див. [В-2](vymohy/02-членство-і-реєстр/V-02.md).
 
-### Чернетка статуту
+### Чернетки статуту (паралельно)
 
-- Поточний текст: [`drafts/draft.md`](drafts/draft.md) ([DOCX](drafts/draft.docx))
-- Поточний розбір щодо вимог: [`drafts/draft_rozbir.md`](drafts/draft_rozbir.md)
-- Знімки за датами та як оновлювати: [`drafts/README.md`](drafts/README.md)
+Дві окремі редакції; оновлення кожної — у своїй папці ([як вести](drafts/README.md)).
+
+| Автор | Текст | Розбір | Примітка |
+|--------|--------|--------|----------|
+| **Євгенія Кулик** | [`draft_kulyk/draft.md`](drafts/draft_kulyk/draft.md) | [`розбір`](drafts/draft_kulyk/draft_rozbir.md) | поточний знімок **2026-07-29** |
+| **Василенко** | [`draft_vasilenko/draft.md`](drafts/draft_vasilenko/draft.md) | [`розбір`](drafts/draft_vasilenko/draft_rozbir.md) | знімок **2026-08-05**; [пояснювальна](drafts/draft_vasilenko/draft_description.md) |
 
 Вимоги згруповані за темами. Нумерація В-N збережена.
 
